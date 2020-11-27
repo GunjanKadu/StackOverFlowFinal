@@ -40,7 +40,7 @@ function TagsPage() {
   return (
     <Layout extra={false}>
       <Head>
-        <title>Tags - Clone of Stackoverflow</title>
+        <title>Tags - Bufferover Flow</title>
       </Head>
 
       <PageTitle title="Tags" borderBottom={false}>
@@ -74,7 +74,9 @@ function TagsPage() {
             ))}
           </TagList>
 
-          {tags.length == 0 && <p className="not-found">No tags matched your search.</p>}
+          {tags.length == 0 && (
+            <p className="not-found">No tags matched your search.</p>
+          )}
         </>
       )}
     </Layout>
